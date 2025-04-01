@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 const ProfileModal = () => {
   const [isOpen, setIsOpen] = useState(false); // Estado para controlar la visibilidad del modal
@@ -16,7 +17,7 @@ const ProfileModal = () => {
         onClick={toggleModal}
         className="shrink-0 focus:outline-none"
       >
-        <img
+        <Image
           className="size-10 rounded-full"
           src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=htmlFormat&fit=facearea&facepad=2&w=256&h=256&q=80"
           alt="User profile"
@@ -44,7 +45,7 @@ const ProfileModal = () => {
             >
               {/* Contenido del modal */}
               <div className="text-center">
-                <img
+                <Image
                   className="size-24 rounded-full mx-auto mb-4"
                   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=htmlFormat&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt="User profile"
