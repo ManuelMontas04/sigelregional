@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { FC } from "react";
-import link from "next/link";
 import Link from "next/link";
 
 const LoginPage: FC = () => {
